@@ -31,6 +31,7 @@ void MainWindow::restart()
     button2->show();
     QObject::connect(button1,SIGNAL(clicked()),this,SLOT(renew_mainwindow()));//go back start window play again
     QObject::connect(button2,SIGNAL(clicked()),this,SLOT(QUITSLOT()));//quit whole game
+    QObject::connect(button2,SIGNAL(clicked()),this,SLOT(close()));
 }
  void MainWindow::renew_mainwindow()
 {
