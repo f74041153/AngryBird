@@ -35,9 +35,9 @@ public:
 &&contact->GetFixtureB()->GetBody()->GetFixtureList()->GetDensity()==10.0)
           {
 
-             if(ptr!=contact->GetFixtureA()->GetBody())
+             if(ptr!=contact->GetFixtureB()->GetBody())
              {
-                  ptr=contact->GetFixtureA()->GetBody();
+                  ptr=contact->GetFixtureB()->GetBody();
                   Enemy*e=(Enemy*)(contact->GetFixtureB()->GetBody()->GetUserData());
                   e->collide();
 
